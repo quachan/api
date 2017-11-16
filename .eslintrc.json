@@ -1,0 +1,48 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "mocha": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:flowtype/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "flowtype"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": "off",
+        "no-var": "error",
+        "space-before-blocks": "error",
+        "arrow-spacing": "error",
+        "keyword-spacing": "error",
+        "space-before-function-paren": "error",
+        "brace-style": ["error", "stroustrup"]
+    }
+}
